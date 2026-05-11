@@ -1,0 +1,31 @@
+{
+  "name": "soundspin-records",
+  "version": "1.0.0",
+  "description": "Tienda de música SoundSpin Records",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "init-db": "psql -U postgres -d soundspin_db -f database/init.sql"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": [
+    "music",
+    "store",
+    "vinyl",
+    "cd",
+    "ecommerce"
+  ],
+  "author": "SoundSpin Records",
+  "license": "MIT"
+}
